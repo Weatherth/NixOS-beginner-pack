@@ -44,11 +44,13 @@ read -p "answer: " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 clear
-sudo rm -rf /etc/nixos/configuration.nix
+sudo rm -rf /etc/nixos/*
 sleep 0.1
 sudo cp -r $SCRIPTPATH/configuration.nix /etc/nixos/
 sudo cp -r $SCRIPTPATH/configs/ /etc/nixos/
 echo -e "${GREEN}configuration.nix replaced.${NC}"
+sleep 0.1
+sudo nixos-generate-config
 echo
 else
 clear
