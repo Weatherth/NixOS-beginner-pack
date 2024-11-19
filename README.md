@@ -13,7 +13,7 @@
 <p>4 - Change your actual path in the terminal to the extracted folder path (with the command: cd /path/to/the/folder)</p>
 <p>5 - Run the following command: sh install.sh</p>
 <p>6 - Follow the instructions and dont forget to read everything (there is not too much text) !</p>
-<p>7 - Edit the users.nix file and the home.nix file ! There is a "TODO" comment next to every needed changes. You can use nano, vim or a text editor.</p>
+<p>7 - Edit the users.nix, the configuration.nix and the home.nix files ! There is a "TODO" comment next to every needed changes. You can use nano, vim or a text editor.</p>
 <p>8 - Enjoy your new system (or not, do what you want)</p>
 <p>&nbsp;</p>
 <h4>If needed you can open an issue on Github (dont expect instant answer but i will try to).</h4>
