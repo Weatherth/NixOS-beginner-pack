@@ -26,9 +26,9 @@ read -p "answer: " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 clear
-sudo mkdir -p ~/backup
+sudo mkdir -p ~/backup_$(date +%F)
 sleep 0.1
-sudo cp -r /etc/nixos/* ~/backup
+sudo cp -r /etc/nixos/* ~/backup_$(date +%F)
 clear
 echo -e "${GREEN}backup created successfully in your home directory.${NC}"
 echo
