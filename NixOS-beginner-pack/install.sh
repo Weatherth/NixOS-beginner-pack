@@ -38,7 +38,7 @@ echo -e "${ORANGE}skipping${NC}"
 echo
 fi
 
-echo -e "Do you want to replace the configuration.nix file ? Press ${GREEN}y${NC} key to confirm or any other key to skip."
+echo -e "Do you want to replace the configuration.nix file ? ${RED}It will erase /etc/nixos/ content!${NC} Press ${GREEN}y${NC} key to confirm or any other key to skip."
 echo
 read -p "answer: " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
