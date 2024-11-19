@@ -49,7 +49,7 @@ sleep 0.1
 sudo cp -r $SCRIPTPATH/configuration.nix /etc/nixos/
 sudo cp -r $SCRIPTPATH/configs/ /etc/nixos/
 echo -e "${GREEN}configuration.nix replaced.${NC}"
-sleep 0.1
+sleep 0.5
 sudo nixos-generate-config
 echo
 else
