@@ -8,7 +8,7 @@ clear
 echo -e "${RED}[Warning]${NC} ${YELLOW}This script will install a fully working NixOS system with Gnome as the Desktop Environment. It is intended to be used on a fresh installation made from the NixOS-Gnome iso image. If you have installed NixOS with another way, be aware that this script might not work or work partially.${NC}"
 echo
 
-echo -e "Do you want to launch the script ? Press ${GREEN}y${NC} key key to confirm or any other key to cancel."
+echo -e "Do you want to launch the script ? Press ${GREEN}y${NC} key to confirm or any other key to cancel."
 echo
 read -p "answer: " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
