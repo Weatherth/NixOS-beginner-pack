@@ -80,5 +80,5 @@ echo -e "If you want to test it first run: ${GREEN}sudo nixos-rebuild dry-build 
 echo
 echo -e "${RED}Do not forget to copy your backup and the current config to an external drive or USB key!${NC}"
 echo
-echo "One last thing, a little quote for you: If you were any dumber i'd have to water you once a day. Now go learn NixOS by yourself!"
+echo "One last thing, a little quote for you: If you were any dumber i'd have to water you once a day. Now go learn NixOS by yourself! (just kidding but you should)"
 echo
