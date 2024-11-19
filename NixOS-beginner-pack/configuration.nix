@@ -27,7 +27,15 @@
     pulse.enable = true;
   };
 
-  nixpkgs.config.allowUnfree = true;
+  nixpkgs = {
+    config = {
+    allowUnfree = true;
+    packageOverrides = pkgs: {
+    stable = import <nixos-stable> {config = config.nixpkgs.config;};
+    unstable = import (fetchTarball "https://github.com/NixOS/nixpkgs/archive/nixos-unstable.tar.gz") {};
+    };
+   };
+  };
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   nix.settings.auto-optimise-store = true;
   nix.optimise.automatic = true;
