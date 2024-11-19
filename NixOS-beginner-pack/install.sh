@@ -72,7 +72,7 @@ echo -e "${ORANGE}skipping${NC}"
 echo
 fi
 
-echo -e "You can now run the following command to apply the changes: ${GREEN}sudo nixos-rebuild --flake /etc/nixos/${NC}"
+echo -e "You can now run the following command to apply the changes: ${GREEN}sudo nixos-rebuild --flake /etc/nixos/${NC} or ${GREEN}nixos-rebuild switch${NC} if you didn't took the home-manager option"
 echo
 echo -e "${RED}Do not forget to copy your backup and the current config to an external drive or USB key!${NC}"
 echo
