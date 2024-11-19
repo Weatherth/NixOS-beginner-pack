@@ -44,7 +44,7 @@ read -p "answer: " -n 1 -r
 if [[ $REPLY =~ ^[Yy]$ ]]
 then
 clear
-sudo rm -rf /etc/nixos/*
+sudo rm -rf /etc/nixos/configuration.nix
 sleep 0.1
 sudo cp -r $SCRIPTPATH/configuration.nix /etc/nixos/
 sudo cp -r $SCRIPTPATH/configs/ /etc/nixos/
